@@ -1,0 +1,46 @@
+<div class="boxes">
+    <div *ngIf="lesHistoriques.length > 0; then myHistorique else historiqueVide"> </div>
+    <ng-template #myHistorique>
+        <table class="table-style">
+            <thead>
+                <tr>
+                    <td>Commande</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <div class="article" *ngFor="let historique of lesHistoriques">
+                    <tr>
+                        <th>Articles Achetées :</th>
+                        <td>{{historique.listeCommande}}</td>
+                    </tr>
+                    <tr>
+                        <th>Nombre d'items : </th>
+                        <td>{{historique.nbItems}}</td>
+                    </tr>
+                    <tr>
+                        <th>Prix Total :</th>
+                        <td>{{historique.prixTotal}}</td>
+                    </tr>
+                    <tr>
+                        <th>Date de Commande : </th> 
+                        <td>  {{ historique.dateCommandeFormat }} </td>
+                    </tr>
+                    <form [formGroup]="deleteCommande" (ngSubmit)='supprimer(historique.dateCommande)'> 
+                        <button class="button is-link">Supprimer la Commande</button> 
+                    </form>
+                    </div>
+                </tr>
+            </tbody>
+            <div class="deleteAll">
+                <form (ngSubmit)='supprimerAll()'>
+                    <button class="button is-link other">Supprime toutes les commandes</button>
+                </form>
+            </div>
+        </table>
+    </ng-template>
+    
+    <ng-template #historiqueVide>
+        <p>Vous n'avez jamais fais d'achats !</p>
+    </ng-template>
+</div>

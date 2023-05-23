@@ -1,0 +1,19 @@
+<ul class="column">
+    <li class="listview">
+        <div class="boxes">
+            <div class="article" *ngFor="let boxe of sushi">
+                <img src="assets/images/{{boxe.image}}.png">
+                <p >Nom : {{ boxe.nom }} </p>
+                <p>Prix : {{ boxe.prix }} €</p>
+                <p>Nb Pieces : {{ boxe.pieces }}</p>
+                <form [formGroup]="boxeForm" (ngSubmit)="addPanier(boxe.nom, boxe.prix, boxe.image)">
+                    <div class="wrap">
+                        <button class="button is-link">Ajoutez au panier</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</li>
+</ul>
+
+    

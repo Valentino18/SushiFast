@@ -1,0 +1,27 @@
+<div class="boxes">
+    <div *ngIf="lesCommandes.length > 0; then myCommande else commandeVide"> </div>
+    <ng-template #myCommande>
+        <div class="article" *ngFor="let boxe of lesCommandes">
+            <img src="assets/images/{{boxe.image}}.png">
+            <p >Nom : {{ boxe.nom }} </p>
+            <p>Prix : {{ boxe.prix }} €</p>
+            <form [formGroup]="deleteArticle" (ngSubmit)='supprimer(boxe.nom)'> 
+                <button class="button is-link">Supprimer L'article</button> 
+            </form>
+        </div>
+        <div class="deleteAll">
+            <form (ngSubmit)='supprimerAll()'>
+                <button class="button is-link other">Supprimer le Panier</button>
+            </form>
+        </div>
+        <div class="valide">
+            <form (ngSubmit)="addPayment(lesCommandes)">
+                <button class="button is-link other" type="submit">Paiement de la Commande</button>
+            </form>
+         </div>
+    </ng-template>
+    
+    <ng-template #commandeVide>
+        <p>Votre Panier est vide</p>
+    </ng-template>
+</div>

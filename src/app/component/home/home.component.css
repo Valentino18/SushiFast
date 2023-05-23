@@ -1,0 +1,85 @@
+main {
+    background: url("https://www.sushishop.fr/fr/USER/video/exports/video_marque_2019.1080p.standard.mp4");
+height: 100vh;
+-webkit-background-size: cover;
+background-size: cover;
+
+position: relative;
+}
+.wrapper {
+    width: 1170px;
+    margin: auto;
+}
+
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.nav-area li {
+    display: inline-block;
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.nav-area li a:hover {
+    color: lime;
+}
+
+.logo img {
+    width: 100px;
+    float: left;
+    height: auto;
+}
+
+.welcome {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+
+.welcome h1 {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: #fff;
+    text-transform:none;
+    font-size: 60px;
+}
+
+.welcome h1:hover {
+    color: lime;
+}
+
+.welcome h2 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-transform: none;
+    font-size: 30px;
+}
+
+.welcome h2:hover {
+    color: lime;
+}
+
+.welcome h3 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-transform: none;
+    font-size: 30px;
+}
+
+.welcome h3:hover {
+    color: lime;
+}

@@ -1,0 +1,47 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/bundle": {
+        "revision": "44a1e064d0cf9c3ef8d1820be7988f762f222cf5"
+      },
+      "homebrew/cask": {
+        "revision": "64f5bdd98be691d1099a213bd786c50a80fd2fa8"
+      },
+      "homebrew/core": {
+        "revision": "1903bc67d4d66862a0ed89158c43501985db7a6c"
+      },
+      "homebrew/services": {
+        "revision": "62058c029b8fea26c8cceae90e0b0ace602a2865"
+      },
+      "mongodb/brew": {
+        "revision": "9c50d2ebbc52e388cbe4e8ec58924223b719ca7b"
+      }
+    },
+    "cask": {
+      "android-platform-tools": {
+        "version": "31.0.3,e8b2b4cbe47c728c1e54c5f524440b52d4e1a33c",
+        "options": {
+          "full_name": "android-platform-tools"
+        }
+      },
+      "miniforge": {
+        "version": "4.10.3-10",
+        "options": {
+          "full_name": "miniforge"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "monterey": {
+        "HOMEBREW_VERSION": "3.3.7",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "1903bc67d4d66862a0ed89158c43501985db7a6c",
+        "CLT": "",
+        "Xcode": "13.1",
+        "macOS": "12.0.1"
+      }
+    }
+  }
+}
