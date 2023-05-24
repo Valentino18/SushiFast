@@ -111,7 +111,7 @@ Destinataires CC : M.Capuozzo, **autres membres de l’équipe**
 
 * Date du projet : 2 décembre 2021
 * Nom de l'équipe : Les alternants
-* Participants au projet : Enzo Carpentier, Kilian Moliere et Corentin Bonifacio
+* Participants au projet : Hakim, Billy et Valentino
 
 ### Les différents diagrammes demandés
 
